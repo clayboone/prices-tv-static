@@ -1,5 +1,7 @@
 'use strict';
-var slideIndex = 0;
+
+const delaySeconds = 20; // Set this higher for prod
+let slideIndex = 0;
 
 showSlides();
 // document.getElementById("iphone-original").style.display="block";
@@ -23,5 +25,5 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
 
     // Run this function again in a few seconds
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, (delaySeconds * 1000));
 }
