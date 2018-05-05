@@ -1,10 +1,8 @@
 'use strict';
 var slideIndex = 0;
-// showSlides();
 
-// debug the stupid grid >.<
-document.getElementById("iphone-8").style.display="block";
-// document.getElementById("iphone-x").style.display="block";
+showSlides();
+// document.getElementById("iphone-original").style.display="block";
 
 function showSlides() {
     var i;
