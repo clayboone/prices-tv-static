@@ -35,3 +35,6 @@ npm-debug.log
 # Compiled CSS
 public/stylesheets/*.css
 !public/stylesheets/w3.css
+
+# Original Apple images
+public/images/iphone*.jpg
