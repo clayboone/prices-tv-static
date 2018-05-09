@@ -1,12 +1,12 @@
 @slide-background-color: lighten(red, 12%);
-@card-background-color: darken(white, 10%);
+@card-background-color: darken(white, 0%);
 @text-color: lighten(black, 25%);
 @bullet-info-color: lighten(@text-color, 25%);
 
 @pricetag-top-bg-color: rgb(75, 75, 75);
 @pricetag-top-font-color: darken(white, 15%);
 
-@pricetag-bottom-bg-color: @card-background-color;
+@pricetag-bottom-bg-color: darken(white, 10%);
 @pricetag-bottom-font-color: @text-color;
 
 @tv-border-width: 50px;
@@ -15,9 +15,9 @@ img.thumb {
   max-height: 200px;
 }
 
-.plus img.thumb {
-  max-height: 235px;
-}
+// .plus img.thumb {
+//   max-height: 235px;
+// }
 
 html, body {
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -84,9 +84,9 @@ html, body {
 
   .thumb {
     // transform: scaleX(-1);
-    display: inline;
-    align-content: right;
-    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .title {
     font-size: 1.8em;
@@ -115,17 +115,18 @@ html, body {
       margin: 2%;
       padding-top: 14px;
 
-      background-color: @pricetag-top-bg-color;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       border-radius: 5px;
-
-      font-size: 1.2em;
-      color: @pricetag-top-font-color;
-
-      p {
+      
+      p.name {
+        font-size: 1.2em;
+        color: @pricetag-top-font-color;  
+        background-color: @pricetag-top-bg-color;
+      }
+      p.price {
+        font-size: 0.8em;
         color: @pricetag-bottom-font-color;
         background-color: @pricetag-bottom-bg-color;
-        font-size: 0.8em;
       }
     }
   }
