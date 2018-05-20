@@ -1,6 +1,6 @@
 'use strict';
 
-const delaySeconds = 20; // Set this higher for prod
+const delaySeconds = 2 * 60; // Set this higher for prod
 let slideIndex = 0;
 
 showSlides();
