@@ -27,3 +27,15 @@ function showSlides() {
     // Run this function again in a few seconds
     setTimeout(showSlides, (delaySeconds * 1000));
 }
+
+document.onkeydown = (ev) => {
+    ev = ev || window.event;
+    switch (ev.key) {
+        case "ArrowRight":
+            ev.preventDefault();
+            showSlides();
+            break;
+        default:
+            break;
+    }
+}
